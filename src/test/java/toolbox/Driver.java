@@ -1,5 +1,12 @@
 package toolbox;
 
+/**
+ * @author esalkan
+ * @project TheHerakles Task No :82
+ * @type Desktop Web Automation
+ * @repo https://github.com/esalkan/TheHerakles.git
+ */
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
@@ -8,6 +15,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
+
 
 public class Driver {
     // Constructor
