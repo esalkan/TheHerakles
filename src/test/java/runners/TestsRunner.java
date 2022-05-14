@@ -14,8 +14,10 @@ import org.junit.runner.RunWith;
 
 // Declaring features files where are they placed
 @RunWith(Cucumber.class)
+// CucumberOptions to run the test
 @CucumberOptions(
         plugin = {
+                "pretty",                               // Prints the output in a readable format
                 "json:target/cucumber.json",            // Creating a json report
                 "html:target/default-html-report",      // Creating a 'Default html' report
                 "rerun:target/rerun.txt"                // Saving in to the file failed scenario line in feature
