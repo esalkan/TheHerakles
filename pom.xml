@@ -78,7 +78,7 @@
                     <runOrder>Alphabetical</runOrder>
                     <includes>
                         <include>**/*TestsRunner.java</include>
-                        <include>**/*FailedTestRunner.java</include>
+                        <include>**/*FailedTestsRunner.java</include>
                     </includes>
                 </configuration>
             </plugin>
