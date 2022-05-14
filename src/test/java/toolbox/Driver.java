@@ -26,9 +26,10 @@ public class Driver {
     private static WebDriver driver;
 
     // Instance getDriver(browserType) method for driver. It's a static method.
-    public static WebDriver getDriver(String browserType) {
+    public static WebDriver getDriver() {
         // Adding condition before driver type selection to avoid null pointer exception.
         if (driver == null) {
+            String browserType = ConfReader.getConf("browser");
             // Based on browser selection setup browser driver type. It's a switch case.
             switch (browserType) {
                 // Chrome browser WebDriver setup for Chrome browser.

@@ -22,9 +22,9 @@ public class Hooks {
     // This method will be executed before every scenario in the project
     public void startUp(){
         // Maximize the browser window before every scenario starts running in the project
-        Driver.getDriver("chrome").manage().window().maximize();
+        Driver.getDriver().manage().window().maximize();
         // Set implicit wait for the project to wait for the element to be visible in the project
-        Driver.getDriver("chrome").manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
     }
 
     // After hook for the project
