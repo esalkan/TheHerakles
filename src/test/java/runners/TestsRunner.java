@@ -23,9 +23,9 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt"                // Saving in to the file failed scenario line in feature
         },
         features = "src/test/resources/features",       // *.feature files path
-        glue = "src/test/java/stepdefs",                // step definitions path
+        glue = "stepdefs",                              // step definitions path
         dryRun = false,                                 // check step definitions
-        tags = "@wip"                                   // *.feature file tag which wanna execute
+        tags = "@wip"                                   // *.feature file tag which want to execute
 )
 public class TestsRunner {
 
