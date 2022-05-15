@@ -1,16 +1,41 @@
 package pages;
 
-import org.junit.Assert;
-import org.openqa.selenium.support.PageFactory;
+/**
+ * @author esalkan
+ * @vcard https://esalkan.com
+ * @project TheHerakles Task No :82
+ * @type Desktop Web Automation
+ * @repo https://github.com/esalkan/TheHerakles.git
+ */
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 import toolbox.Driver;
 
-public class IMDbStarPage {
-    // Constructor to initialize the elements of the page object model (PO) using PageFactory class and the driver instance from Driver class (Singleton)
-    public IMDbStarPage() {
-        PageFactory.initElements(Driver.getDriver(), this);
-    }
+public class IMDbStarPage extends GroundPage{
 
+    // Web Element for Filmography dropdown
+    @FindBy(xpath ="//*[@name='sort']")
+    public WebElement sortBy;
+
+    // getting the actual title of the page
     public String getActualTitle() {
         return Driver.getDriver().getTitle();
     }
+
+    // Clicking on the Dropdown option
+    public void clickDropdown(){
+        JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+        js.executeScript("window.scrollBy(0,500)", "");
+        sortBy.click();
+    }
+
+    // Selecting the option from the dropdown
+    public void selectDropdownOption(String option){
+        Select stateOption = new Select(sortBy);
+        stateOption.selectByVisibleText(option);
+    }
 }
+

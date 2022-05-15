@@ -1,18 +1,20 @@
 package pages;
 
+/**
+ * @author esalkan
+ * @vcard https://esalkan.com
+ * @project TheHerakles Task No :82
+ * @type Desktop Web Automation
+ * @repo https://github.com/esalkan/TheHerakles.git
+ */
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import toolbox.Driver;
 
 // Page Object Model for Google Search Page
-public class Google {
-
-    // Constructor to initialize the elements of the page object model (PO) using PageFactory class and the driver instance from Driver class (Singleton)
-    public Google() {
-        PageFactory.initElements(Driver.getDriver(), this);
-    }
+public class GooglePage extends GroundPage {
 
     // Page Elements
     @FindBy(xpath = "//input[@name='q']") // xpath for the search box in Google Search Page
