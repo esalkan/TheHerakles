@@ -1,11 +1,3 @@
-package stepdefs;
-
-import io.cucumber.java.Before;
-import io.cucumber.java.After;
-import toolbox.Driver;
-
-import java.time.Duration;
-
 /**
  * @author esalkan
  * @vcard https://esalkan.com
@@ -13,6 +5,13 @@ import java.time.Duration;
  * @type Desktop Web Automation
  * @repo https://github.com/esalkan/TheHerakles.git
  */
+
+package stepdefs;
+
+import io.cucumber.java.Before;
+import io.cucumber.java.After;
+import toolbox.Driver;
+import java.time.Duration;
 
 // This class is used to define the hooks for the project
 public class Hooks {

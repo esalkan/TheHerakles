@@ -1,9 +1,3 @@
-package toolbox;
-
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.Properties;
-
 /**
  * @author esalkan
  * @vcard https://esalkan.com
@@ -11,6 +5,12 @@ import java.util.Properties;
  * @type Desktop Web Automation
  * @repo https://github.com/esalkan/TheHerakles.git
  */
+
+package toolbox;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
 
 public class ConfReader {
 

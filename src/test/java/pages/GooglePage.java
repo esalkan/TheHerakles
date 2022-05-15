@@ -1,5 +1,3 @@
-package pages;
-
 /**
  * @author esalkan
  * @vcard https://esalkan.com
@@ -7,6 +5,8 @@ package pages;
  * @type Desktop Web Automation
  * @repo https://github.com/esalkan/TheHerakles.git
  */
+
+package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

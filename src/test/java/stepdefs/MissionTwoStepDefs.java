@@ -1,5 +1,3 @@
-package stepdefs;
-
 /**
  * @author esalkan
  * @vcard https://esalkan.com
@@ -7,6 +5,8 @@ package stepdefs;
  * @type Desktop Web Automation
  * @repo https://github.com/esalkan/TheHerakles.git
  */
+
+package stepdefs;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

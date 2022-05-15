@@ -1,3 +1,8 @@
+# @author esalkan
+# @vcard https://esalkan.com
+# @project TheHerakles Task No :82
+# @type Desktop Web Automation
+# @repo https://github.com/esalkan/TheHerakles.git
 Feature: Mission 2 Task
 
   @wip

@@ -1,11 +1,12 @@
-package toolbox;
-
 /**
  * @author esalkan
+ * @vcard https://esalkan.com
  * @project TheHerakles Task No :82
  * @type Desktop Web Automation
  * @repo https://github.com/esalkan/TheHerakles.git
  */
+
+package toolbox;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

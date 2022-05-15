@@ -1,9 +1,3 @@
-package runners;
-
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
-import org.junit.runner.RunWith;
-
 /**
  * @author esalkan
  * @vcard https://esalkan.com
@@ -11,6 +5,12 @@ import org.junit.runner.RunWith;
  * @type Desktop Web Automation
  * @repo https://github.com/esalkan/TheHerakles.git
  */
+
+package runners;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
 
 // Declaring features files where are they placed
 @RunWith(Cucumber.class)
