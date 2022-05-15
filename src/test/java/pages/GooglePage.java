@@ -16,7 +16,7 @@ import toolbox.Driver;
 // Page Object Model for Google Search Page
 public class GooglePage extends GroundPage {
 
-    // Page Elements
+    // Page Elements Locators
     @FindBy(xpath = "//input[@name='q']") // xpath for the search box in Google Search Page
     public WebElement searchBox;
 
