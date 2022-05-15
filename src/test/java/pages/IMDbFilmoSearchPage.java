@@ -7,7 +7,7 @@ import java.util.List;
 
 public class IMDbFilmoSearchPage extends IMDbStarPage{
 
-    // Web Element for keywords search input refine section
+    // Web Element for keywords search input refine section on the page
     @FindBy(xpath = "//*[@data-for='keywords']/strong")
     public WebElement keywords;
 
