@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
  * @repo https://github.com/esalkan/TheHerakles.git
  */
 
-@RunWith(Cucumber.class)
+@RunWith(Cucumber.class) // This annotation is used to run the test
 @CucumberOptions(
         plugin = {"html:target/failed-html-report"},    // Report target path
         features = {"@target/rerun.txt"},               // rerun file path

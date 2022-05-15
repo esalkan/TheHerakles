@@ -20,8 +20,8 @@ public class GooglePage extends GroundPage {
     @FindBy(xpath = "//input[@name='q']") // xpath for the search box in Google Search Page
     public WebElement searchBox;
 
-    @FindBy(xpath = "//input[@name='btnK']")
-    public WebElement searchButton; // xpath for search button on Google Search Page
+    @FindBy(xpath = "//input[@name='btnK']") // xpath for search button on Google Search Page
+    public WebElement searchButton;
 
     // select for the search result with the given string
     public void selectSearchResult(String str) {

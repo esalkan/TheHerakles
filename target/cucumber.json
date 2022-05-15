@@ -1,0 +1,189 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-05-15T01:09:46.131Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3257338000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.startUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Search for actors",
+        "description": "",
+        "id": "mission-2-task;search-for-actors",
+        "after": [
+          {
+            "result": {
+              "duration": 308976000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1104846000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "navigate to search engine",
+            "match": {
+              "location": "stepdefs.MissionTwoStepDefs.navigate_to_search_engine()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2488134000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "enter search bar for actor name \"Bruce Willis\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bruce Willis\"",
+                  "offset": 32
+                }
+              ],
+              "location": "stepdefs.MissionTwoStepDefs.enter_search_bar_for_actor_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5503249000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "select \"Bruce Willis - IMDb\" from search results",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bruce Willis - IMDb\"",
+                  "offset": 7
+                }
+              ],
+              "location": "stepdefs.MissionTwoStepDefs.select_from_search_results(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8076000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "verify that title is \"Bruce Willis - IMDb\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bruce Willis - IMDb\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefs.MissionTwoStepDefs.verify_that_title_is(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 241870000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "select Show by... from drop down menu",
+            "match": {
+              "location": "stepdefs.MissionTwoStepDefs.select_Show_by_from_drop_down_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2981700000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "select \"Genre »\" from drop down menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Genre »\"",
+                  "offset": 7
+                }
+              ],
+              "location": "stepdefs.MissionTwoStepDefs.select_from_drop_down_menu(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 290282000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "click on the Keywords vertical tab from the refine section",
+            "match": {
+              "location": "stepdefs.MissionTwoStepDefs.click_on_the_vertical_tab_from_the_refine_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 34289000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "verify the keywords are not sorted by name",
+            "match": {
+              "location": "stepdefs.MissionTwoStepDefs.verify_the_keywords_are_not_sorted_by_name()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1064551000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "verify that \"Incredible\" is not a word in the keyword list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Incredible\"",
+                  "offset": 12
+                }
+              ],
+              "location": "stepdefs.MissionTwoStepDefs.verify_that_is_not_a_word_in_the_keyword_list(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Mission 2 Task",
+    "description": "",
+    "id": "mission-2-task",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/MissionTwo.feature",
+    "tags": []
+  }
+]

@@ -1,17 +1,17 @@
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import toolbox.Driver;
 
 import java.util.List;
 
 public class IMDbFilmoSearchPage extends IMDbStarPage{
+
     // Web Element for keywords search input refine section
     @FindBy(xpath = "//*[@data-for='keywords']/strong")
     public WebElement keywords;
 
+    // Find all the keywords in the refine section
     @FindBy(xpath = "//fieldset[@name='keywords']/label/span[@class='faceter-facet-text']")
     public List<WebElement> keywordsInput;
 
@@ -25,7 +25,7 @@ public class IMDbFilmoSearchPage extends IMDbStarPage{
         return sorted;
     }
 
-
+    // Check all the keywords are contains given string
     public boolean isKeywordInList(String keyword){
         boolean found = false;
         for (WebElement element : keywordsInput){
